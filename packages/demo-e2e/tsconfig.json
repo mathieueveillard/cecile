@@ -1,0 +1,26 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "tsBuildInfoFile": "dist/tsconfig.tsbuildinfo",
+    "allowJs": true,
+    "types": ["cypress", "node"],
+    "sourceMap": false
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.js",
+    "cypress.config.ts",
+    "**/*.cy.ts",
+    "**/*.cy.tsx",
+    "**/*.cy.js",
+    "**/*.cy.jsx",
+    "**/*.d.ts"
+  ],
+  "exclude": ["dist", "eslint.config.js"],
+  "references": [
+    {
+      "path": "../demo"
+    }
+  ]
+}
